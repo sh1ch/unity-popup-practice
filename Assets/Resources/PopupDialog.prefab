@@ -676,8 +676,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7127416609367205863}
   m_HandleRect: {fileID: 2189833378414727607}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5317728
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -998,6 +998,9 @@ GameObject:
   - component: {fileID: 1334584648109031260}
   - component: {fileID: 731171847845315819}
   - component: {fileID: 8923970290733511047}
+  - component: {fileID: 3956960568422447955}
+  - component: {fileID: 779234618}
+  - component: {fileID: 6552528179661941915}
   m_Layer: 5
   m_Name: PopupDialog
   m_TagString: Untagged
@@ -1047,7 +1050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0.7058824}
+  m_Color: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 0.7058824}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1075,3 +1078,107 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PopupDialog: {fileID: 8923970290733511046}
+--- !u!114 &3956960568422447955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923970290733511046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd243e0bc30c48478f17ce35e4aaef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _IsEnabled: 1
+  _From: {x: 1, y: 0, z: 0}
+  _To: {x: 1, y: 1, z: 1}
+  _Duration: 0.1
+  _Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0003019534
+      value: 0.3017727
+      inSlope: 1.3355595
+      outSlope: 1.3355595
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.069388255
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Begin:
+    m_PersistentCalls:
+      m_Calls: []
+  End:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!225 &779234618
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923970290733511046}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &6552528179661941915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923970290733511046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a49bec74014e742bacfbc894406f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _IsEnabled: 1
+  _From: 0
+  _To: 1
+  _Duration: 0.4
+  _Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.7924528
+      outSlope: 2.7924528
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.0625
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Begin:
+    m_PersistentCalls:
+      m_Calls: []
+  End:
+    m_PersistentCalls:
+      m_Calls: []

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogCaller : MonoBehaviour
 {
-    private GameObject _DialogPrefab;
+    private GameObject _DialogPrefab = null;
 
     [SerializeField]
     private GameObject _Canvas = null;
